@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+
+  overflow-y: scroll;
+
+  color: $color-gray;
+}
+
+h1 {
+  letter-spacing: 0.08em;
+  
+  font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  letter-spacing: 0.1em;
+  
+  color: $color-primary;
+  
+  font-family: $font-header;
+  line-height: 1.2em;
+
+  @include lg-min {
+    margin-bottom: $gap * 2.8;
+    font-size: 2.5rem;
+  }
+  @include lg-md {
+    margin-bottom: $gap * 2.1;
+    font-size: 2rem;
+  }
+  @include md-sm {
+    margin-bottom: $gap * 1.8;
+    font-size: 1.5rem;
+  }
+  @include sm {
+    margin-bottom: $gap * 1.8;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  letter-spacing: 0.05em;
+  color: $color-gray;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
+
+p {
+  color: $color-gray;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  border-color: $color-light;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-accent {
+  border-color: $color-primary;
+  background-color: rgba(45, 54, 81, 0.8);
+
+  @include sm {
+    width: 100%;
+  }
+
+  @include sm-min {
+    min-width: $gap * 17.5;
+  }
+}
+
+.btn,
+.btn-accent {
+  display: block;
+  height: $gap * 3;
+  padding: 18px $gap;
+  transition: background-color 0.5s, border-color 0.5s;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-width: $gap / 10;
+  border-style: solid;
+  font-size: 1.125rem;
+}
+
+.btn {
+  min-width: $gap * 12.5;
+
+  border: $gap / 10 solid $color-light;
+  background-color: rgba($color-light, 0.1);
+
+  @include lg-min {
+    min-width: $gap * 12.5;
+    height: $gap * 3;
+    padding: 18px $gap;
+    font-size: 1.125rem;
+  }
+  @include lg-md {
+    min-width: $gap * 10;
+    height: $gap * 2.5;
+    padding: 14px $gap;
+  }
+  @include md {
+    min-width: $gap * 8.5;
+    height: $gap * 2;
+    padding: $gap / 2 $gap;
+    letter-spacing: 0.05em;
+  }
+}
+
+.btn:hover,
+.btn:focus,
+.btn-accent:hover,
+.btn-accent:focus {
+  cursor: pointer;
+  background-color: $color-accent;
+}
