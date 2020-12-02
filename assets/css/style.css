@@ -805,6 +805,7 @@ input:focus {
   z-index: 2;
   left: 0;
   margin: 0;
+  letter-spacing: 0.1em;
   position: absolute;
   top: 0;
   right: 0;
@@ -1245,6 +1246,9 @@ input:focus {
     grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
   }
+  .skill-item__title {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1358,6 +1362,9 @@ input:focus {
   }
   .header-content__title {
     margin: 0 0 33px;
+  }
+  .skill-item__title {
+    font-size: 1.125rem;
   }
 }
 
