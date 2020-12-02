@@ -1224,6 +1224,14 @@ input:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .posts__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-height: 691px) {
