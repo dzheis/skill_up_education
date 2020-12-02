@@ -84,14 +84,6 @@ input:focus {
 .btn-accent {
   border-color: $color-primary;
   background-color: rgba(45, 54, 81, 0.8);
-
-  @include sm {
-    width: 100%;
-  }
-
-  @include sm-min {
-    min-width: $gap * 17.5;
-  }
 }
 
 .btn,

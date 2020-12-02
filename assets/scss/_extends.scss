@@ -27,6 +27,11 @@
 }
 
 %button_width {
-    display: flex;
-    justify-content: center;
+    @include sm {
+        width: 100%;
+      }
+    
+    @include sm-min {
+        min-width: $gap * 17.5;
+      }
 }

@@ -475,15 +475,6 @@ template {
   margin-top: 0;
 }
 
-.skills__button, .posts__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1210,7 +1201,7 @@ input:focus {
 }
 
 @media (min-width: 576px) {
-  .btn-accent {
+  .skills__button .btn-accent, .posts__button .btn-accent {
     min-width: 350px;
   }
   .header-content__buttons {
@@ -1224,6 +1215,14 @@ input:focus {
   .skills {
     padding: 10px;
     margin-bottom: 30px;
+  }
+  .skills__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1403,13 +1402,13 @@ input:focus {
 }
 
 @media (max-width: 575.8px) {
+  .skills__button .btn-accent, .posts__button .btn-accent {
+    width: 100%;
+  }
   h2 {
     margin-bottom: 36px;
     text-align: center;
     font-size: 1.5rem;
-  }
-  .btn-accent {
-    width: 100%;
   }
   .header-content__buttons {
     -webkit-box-orient: vertical;

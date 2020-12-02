@@ -29,7 +29,14 @@
     }
   }
 
-  &__button {
+  &__button .btn-accent {
       @extend %button_width;
+  }
+
+  &__button {
+    @include sm-min {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
