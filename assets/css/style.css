@@ -805,7 +805,6 @@ input:focus {
 }
 
 .skill-item__link {
-  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
